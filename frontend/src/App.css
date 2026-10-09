@@ -886,3 +886,35 @@ button {
   border-radius: 10px;
   line-height: 1.6;
 }
+/* The manual-controls column was removed; keep both original preview panes side by side. */
+@media (min-width: 701px) {
+  .editor-layout { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Boys / Girls formal selection — only new controls, existing design unchanged. */
+.formal-type-selector {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.formal-type-btn {
+  border: 2px solid #2563eb;
+  background: #fff;
+  color: #2563eb;
+  padding: 11px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.formal-type-btn.selected {
+  background: #2563eb;
+  color: #fff;
+}
+.formal-type-btn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+@media (max-width: 700px) {
+  .formal-type-btn { flex: 1 1 130px; }
+}
