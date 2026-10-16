@@ -10,7 +10,7 @@ import "./App.css";
 
 // Set VITE_API_BASE_URL in .env when the Kaggle tunnel URL changes.
 
-const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || "https://duties-teaches-barbie-planets.trycloudflare.com").replace(/\/$/, "");
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || "https://comparable-bool-church-newcastle.trycloudflare.com").replace(/\/$/, "");
 
 const CONVERT_ENDPOINT = `${API_BASE_URL}/api/convert/`;
 
